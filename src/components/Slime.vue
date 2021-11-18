@@ -1,6 +1,6 @@
 <template>
   <div class="slime">
-    <h3>{{ name }}</h3>
+    <h2>{{ name }}</h2>
     <img :src="require('@/assets/img/slimes/' + img  + '')" />
   </div>
 </template>
@@ -18,4 +18,7 @@ export default defineComponent({
 </script>
 <style scoped lang="sass">
 @import "../assets/css/_theme.sass"
+
+img
+  width: 100%
 </style>

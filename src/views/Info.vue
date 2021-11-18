@@ -19,11 +19,12 @@ export default defineComponent({
 </script>
 <style scoped lang="sass">
 .page-content
-  display: grid
-  grid-template-columns: repeat(3,1fr)
+  display: flex
+  
+  img
+    object-fit: contain
 
 @media screen and (max-width: 1200px)
   .page-content
-    grid-template-rows: repeat(3,1fr)
-    grid-template-columns: 1fr
+    flex-direction: column
 </style>

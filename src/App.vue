@@ -33,7 +33,6 @@
   display: flex
   align-items: center
   justify-content: center
-  gap: 2em
 
 #clouds-top, #clouds-bottom
   display: none
