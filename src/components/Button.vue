@@ -1,5 +1,5 @@
 <template>
-    <span class="button">{{text}}</span>
+  <span class="button">{{ text }}</span>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -7,8 +7,8 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "Button",
   props: {
-      text: String
-  }
+    text: String,
+  },
 });
 </script>
 <style scoped lang="sass">
@@ -19,4 +19,5 @@ span
     font-size: 1.5em
     border-radius: 0.5em
     padding: 0.25em
+    font-weight: bold
 </style>

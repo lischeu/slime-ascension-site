@@ -26,20 +26,14 @@
     </span>
   </footer>
 </template>
-
 <style lang="sass">
 @import "./assets/css/_theme.sass"
-
-#current
-  min-height: 100vh
-
 #content
   margin-top: 10vh
   display: flex
   align-items: center
   justify-content: center
   gap: 2em
-  padding: 2em
 
 #clouds-top, #clouds-bottom
   display: none

@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="page-container">
-    <div class="page-content">
+    <div class="page-content" data-aos="fade-down">
       <img src="../assets/img/titlescreen.png" /><br />
       <a href="https://scorr.itch.io/slime-ascension"><Button text="Play the demo" /></a>
     </div>
@@ -32,4 +32,11 @@ export default defineComponent({
     width: 75%
     filter: drop-shadow(0 0 0.1em )
     margin-bottom: 1em
+
+@media screen and (max-width: 1200px)
+
+  .page-container
+    background-size: cover
+    img
+      width: 100%
 </style>
