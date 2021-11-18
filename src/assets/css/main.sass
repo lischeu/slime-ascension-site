@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap')
+@import "theme"
+
+body
+    margin: 0
+    background-color: $base-color
+
+#app
+    font: 1em 'Dosis', Helvetica, sans-serif
+    color: $neutral-dark
+
+a
+    letter-spacing: 0.2em
+    color: $neutral-light
+    text-decoration: none
+    text-transform: uppercase
+
+    &:hover
+        transition: 0.2s
+        color: $accent-light
+
+h1, h2, h3
+    color: $accent-light
+    text-transform: uppercase
+    text-align: center
+
+.page-container
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1.25em
