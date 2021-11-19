@@ -1,7 +1,8 @@
 <template>
-  <div class="slime">
+  <div class="slime flex-col">
     <h2>{{ name }}</h2>
-    <img :src="require('@/assets/img/slimes/' + img  + '')" />
+    <img :src="require('@/assets/img/slimes/' + img + '')" />
+    <h3>{{ desc }}</h3>
   </div>
 </template>
 <script lang="ts">

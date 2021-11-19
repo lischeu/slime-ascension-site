@@ -29,9 +29,12 @@ export default defineComponent({
   text-align: center
 
   img
+    filter: drop-shadow(0 0 0.1em $base-dark)
     width: 75%
-    filter: drop-shadow(0 0 0.1em )
     margin-bottom: 1em
+
+h1
+  filter: drop-shadow(0 0 0.1em $base-dark)
 
 @media screen and (max-width: 1200px)
 

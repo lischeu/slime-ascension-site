@@ -20,4 +20,5 @@ span
     border-radius: 0.5em
     padding: 0.25em
     font-weight: bold
+    filter: drop-shadow(0 0 0.1em $base-dark)
 </style>

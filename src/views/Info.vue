@@ -1,9 +1,18 @@
 <template>
   <div class="page-container">
-    <div class="page-content">
-      <Slime name="Axe Slime" img="axe-slime.png" />
-      <Slime name="Shield Slime" img="shield-slime.png" />
-      <Slime name="Unicorn Slime" img="unicorn-slime.png" />
+    <div class="page-content flex-col">
+      <h1>Embrace the sun</h1>
+      <ul class="gameplay">
+        <li>Build a team of slime friends</li>
+        <li>Enhance your friends with powerful buffs</li>
+        <li>Achieve ascension by helping the great sun</li>
+      </ul>
+      <br />
+      <span class="slimes">
+        <Slime name="Axe Slime" img="axe-slime.png" desc="*krrt*" />
+        <Slime name="Shield Slime" img="shield-slime.png" desc="*shing*" />
+        <Slime name="Unicorn Slime" img="unicorn-slime.png" desc="*pew*" />
+      </span>
     </div>
   </div>
 </template>
@@ -18,13 +27,10 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="sass">
-.page-content
+.slimes
   display: flex
-  
-  img
-    object-fit: contain
 
-@media screen and (max-width: 1200px)
-  .page-content
-    flex-direction: column
+.gameplay
+  display: table
+  margin: 0 auto
 </style>

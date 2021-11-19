@@ -21,7 +21,7 @@
         <a href="">Terms of Service</a> | <a href="">Privacy Policy</a> |
         <a href="">Press Kit</a>
       </span>
-      <img src="" />
+      <img src="./assets/img/spawner.png" />
       &copy; 2021 Game Creation Buddies
     </span>
   </footer>
@@ -48,6 +48,7 @@
 
 #nav
   position: fixed
+  z-index: 5
   top: 0
   background-color: $base-light
   display: flex
@@ -56,7 +57,6 @@
   width: 100%
   height: 5vh
   text-transform: uppercase
-  padding: 0.5em
   font-size: 1.5em
   font-weight: bold
   filter: drop-shadow(0 0 0.1em $base-dark)
@@ -76,7 +76,6 @@ footer
 
   img
     width: 10vw
-    height: 10vw
 
   #footer-content
     gap: 1em
