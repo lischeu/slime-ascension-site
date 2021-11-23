@@ -1,7 +1,7 @@
 <template>
   <article>
     <section id="home" class="flex-col align-center">
-      <a href="https://scorr.itch.io/slime-ascension" target="_blank"
+      <a href="" target="_blank"
         ><Button text="Jam version"
       /></a>
       <img src="../assets/img/titlescreen.png" />
