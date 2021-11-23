@@ -35,6 +35,10 @@ export default defineComponent({
 #clouds-top, #clouds-bottom
   display: none
 
+#clouds-right, #clouds-left
+  img
+    width: 15vw
+
 #app
   background: linear-gradient($base-color, $base-dark)
   color: #2c3e50
