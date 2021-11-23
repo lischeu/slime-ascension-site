@@ -1,26 +1,26 @@
 <template>
-  <div id="nav">
+  <nav class="flex align-center">
     <router-link to="/">Home</router-link>
     <router-link to="/info">Info</router-link>
     <router-link to="/media">Media</router-link>
-  </div>
-  <section id="content">
+  </nav>
+  <article id="content" class="flex align-center">
     <div id="clouds-top"><img src="./assets/img/drift-clouds-top.png" /></div>
     <div id="clouds-left"><img src="./assets/img/drift-clouds-left.png" /></div>
-    <router-view id="current" />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
     <div id="clouds-right">
       <img src="./assets/img/drift-clouds-right.png" />
     </div>
     <div id="clouds-bottom">
       <img src="./assets/img/drift-clouds-bottom.png" />
     </div>
-  </section>
+  </article>
   <footer>
-    <span id="footer-content">
-      <span id="footer-links">
-        <a href="">Terms of Service</a> | <a href="">Privacy Policy</a> |
-        <a href="">Press Kit</a>
-      </span>
+    <span id="footer-content" class="flex-col align-center">
       <img src="./assets/img/spawner.png" />
       &copy; 2021 Game Creation Buddies
     </span>
@@ -28,62 +28,41 @@
 </template>
 <style lang="sass">
 @import "./assets/css/_theme.sass"
-#content
-  margin-top: 10vh
-  display: flex
-  align-items: center
-  justify-content: center
 
 #clouds-top, #clouds-bottom
   display: none
 
 #app
   background: linear-gradient($base-color, $base-dark)
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
   color: #2c3e50
   max-width: 100%
   height: 100%
 
-#nav
-  position: fixed
-  z-index: 5
-  top: 0
-  background-color: $base-light
-  display: flex
-  align-items: center
+nav
   justify-content: space-evenly
+  position: fixed
+  top: 0
+  z-index: 5
+  background-color: $base-color
+  filter: drop-shadow(0 0 0.15em $base-dark)
   width: 100%
   height: 5vh
-  text-transform: uppercase
-  font-size: 1.5em
-  font-weight: bold
-  filter: drop-shadow(0 0 0.1em $base-dark)
 
   a
+    font-weight: bold
     filter: drop-shadow(0 0 0.1em $base-dark)
+
     &.router-link-exact-active
-      transition: 0.2s
-      color: $accent-light
+      color: $accent-color
+      
 
 footer
   background-color: $base-dark
-  height: auto
   width: 100%
-  font-weight: bold
-  text-align: center
-
-  img
-    width: 10vw
 
   #footer-content
-    gap: 1em
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    padding: 1em
+    padding: 2em
+
 
 @media screen and (max-width: 1200px)
   #content

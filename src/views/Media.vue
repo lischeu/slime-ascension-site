@@ -1,9 +1,7 @@
 <template>
-  <div id="media" class="page-container">
-    <div class="page-content">
+  <article id="media">
       <p>
         
       </p>
-    </div>
-  </div>
+  </article>
 </template>

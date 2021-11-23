@@ -1,20 +1,19 @@
 <template>
-  <div class="page-container">
-    <div class="page-content flex-col">
+  <article id="info" class="flex-col">
+    <section id="gameplay">
       <h1>Embrace the sun</h1>
-      <ul class="gameplay">
+      <ul>
         <li>Build a team of slime friends</li>
         <li>Enhance your friends with powerful buffs</li>
-        <li>Achieve ascension by helping the great sun</li>
+        <li>Achieve ascension by devoting your afterlife to the great sun</li>
       </ul>
-      <br />
-      <span class="slimes">
-        <Slime name="Axe Slime" img="axe-slime.png" desc="*krrt*" />
-        <Slime name="Shield Slime" img="shield-slime.png" desc="*shing*" />
-        <Slime name="Unicorn Slime" img="unicorn-slime.png" desc="*pew*" />
-      </span>
-    </div>
-  </div>
+    </section>
+    <section id="slimes" class="flex">
+      <Slime data-aos="fade-in" name="Axe Slime" img="axe-slime.png" desc="*krrt*" />
+      <Slime data-aos="fade-in" name="Shield Slime" img="shield-slime.png" desc="*shing*" />
+      <Slime data-aos="fade-in" name="Unicorn Slime" img="unicorn-slime.png" desc="*pew*" />
+    </section>
+  </article>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -27,10 +26,12 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="sass">
-.slimes
-  display: flex
-
-.gameplay
+#gameplay
   display: table
-  margin: 0 auto
+  margin: auto
+
+@media screen and (max-width: 1200px)
+  #slimes
+    flex-direction: column
+    gap: 5em
 </style>
