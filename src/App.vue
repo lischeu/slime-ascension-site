@@ -1,5 +1,4 @@
 <template>
-  <Navigation />
   <article id="content" class="flex align-center">
     <div id="clouds-top"><img src="./assets/img/drift-clouds-top.png" /></div>
     <div id="clouds-left"><img src="./assets/img/drift-clouds-left.png" /></div>
@@ -25,7 +24,8 @@ import Footer from "@/components/Footer.vue";
 export default defineComponent({
   name: "App",
   components: {
-    Navigation, Footer
+    Navigation,
+    Footer,
   },
 });
 </script>
@@ -61,7 +61,6 @@ nav
 
     &.router-link-exact-active
       color: $accent-color
-      
 
 footer
   background-color: $base-dark
@@ -69,7 +68,6 @@ footer
 
   #footer-content
     padding: 2em
-
 
 @media screen and (max-width: 1200px)
   #content
