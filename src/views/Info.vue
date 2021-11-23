@@ -3,15 +3,15 @@
     <section id="gameplay">
       <h1>Embrace the sun</h1>
       <ul>
+        <li>Devote your afterlife to the great sun</li>
         <li>Build a team of slime friends</li>
         <li>Enhance your friends with powerful buffs</li>
-        <li>Achieve ascension by devoting your afterlife to the great sun</li>
       </ul>
     </section>
     <section id="slimes" class="flex">
-      <Slime data-aos="fade-in" name="Axe Slime" img="axe-slime.png" desc="*krrt*" />
-      <Slime data-aos="fade-in" name="Shield Slime" img="shield-slime.png" desc="*shing*" />
-      <Slime data-aos="fade-in" name="Unicorn Slime" img="unicorn-slime.png" desc="*pew*" />
+      <Slime name="Axe" img="axe-slime.png" desc="*krrt*" />
+      <Slime name="Shield" img="shield-slime.png" desc="*shing*" />
+      <Slime name="Unicorn" img="unicorn-slime.png" desc="*pew*" />
     </section>
   </article>
 </template>

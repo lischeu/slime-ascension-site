@@ -1,9 +1,5 @@
 <template>
-  <nav class="flex align-center">
-    <router-link to="/">Home</router-link>
-    <router-link to="/info">Info</router-link>
-    <router-link to="/media">Media</router-link>
-  </nav>
+  <Navigation />
   <article id="content" class="flex align-center">
     <div id="clouds-top"><img src="./assets/img/drift-clouds-top.png" /></div>
     <div id="clouds-left"><img src="./assets/img/drift-clouds-left.png" /></div>
@@ -19,13 +15,20 @@
       <img src="./assets/img/drift-clouds-bottom.png" />
     </div>
   </article>
-  <footer>
-    <span id="footer-content" class="flex-col align-center">
-      <img src="./assets/img/spawner.png" />
-      &copy; 2021 Game Creation Buddies
-    </span>
-  </footer>
+  <Footer />
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+import Navigation from "@/components/Navigation.vue";
+import Footer from "@/components/Footer.vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    Navigation, Footer
+  },
+});
+</script>
 <style lang="sass">
 @import "./assets/css/_theme.sass"
 
