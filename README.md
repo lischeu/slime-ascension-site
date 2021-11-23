@@ -1,4 +1,4 @@
-# slime-ascension-site
+# slime-site
 
 ## Project setup
 ```
