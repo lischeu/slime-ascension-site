@@ -2,7 +2,7 @@
   <footer>
     <span id="footer-content" class="flex-col align-center">
       <img src="../assets/img/spawner.png" />
-      &copy; 2021 Game Creation Buddies
+      <h4>&copy; 2021 GCB</h4>
     </span>
   </footer>
 </template>

@@ -2,7 +2,7 @@
   <div class="slime flex-col">
     <h2>{{ name }}</h2>
     <img data-aos="fade-left" :src="require('@/assets/img/slimes/' + img + '')" />
-    <h3 data-aos="fade-right">{{ desc }}</h3>
+    <span data-aos="fade-right">{{ desc }}</span>
   </div>
 </template>
 <script lang="ts">
@@ -21,6 +21,7 @@ export default defineComponent({
 @import "../assets/css/_theme.sass"
 
 .slime
+  text-align: center
 
 img
   width: 100%

@@ -17,20 +17,30 @@ export default defineComponent({
 @import "../assets/css/_theme.sass"
 
 button
-  background: linear-gradient(0.25turn, $accent-dark, $accent-color)
-  filter: drop-shadow(0 0.2em 0 $accent-dark)
-  background-color: $accent-dark
   padding: 0.5em
   border-radius: 0.5em
-  border: 0
+  background: linear-gradient(0.25turn, $base-color, $base-light)
+  border: 1px solid $accent-color
   font-size: 1em
 
   h2
     color: $accent-light
 
-  &:hover
-    background: linear-gradient(0.25turn, $accent-color, $accent-light)
+  &:after
+    transition: opacity 0.5s ease-in-out
+    content: "originally an entry to GMTK Game Jam 2021 "
+    color: $accent-light
+    position: absolute
+    padding: 0.25em
+    transform: translate(-50%, 50%)
+    margin-bottom: 2em
+    width: max-content
+    height: min-content
+    opacity: 0
 
-    h2
-      color: $neutral-light
+  &:hover
+    background: linear-gradient(0.25turn, $base-color, $accent-color)
+
+    &::after
+      opacity: 1
 </style>
